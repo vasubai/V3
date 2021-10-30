@@ -21,7 +21,7 @@ async def start(client, message):
     EVAMARIABOT = await client.get_me()
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('⚜️ MAIN CHANNEL ⚜️', url="https://t.me/joinchat/Fhcssgw5H8wwMDBl")
+            InlineKeyboardButton('⚜️ MAIN CHANNEL ⚜️', url='https://t.me/joinchat/Fhcssgw5H8wwMDBl')
             ],[
             InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
             InlineKeyboardButton('🔰SERIES🔰', url='https://t.me/netflixorgi')
