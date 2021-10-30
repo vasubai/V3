@@ -21,7 +21,7 @@ async def start(client, message):
     EVAMARIABOT = await client.get_me()
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('⚜️ MAIN CHANNEL ⚜️', url=invite_link.invite_link)
+            InlineKeyboardButton('⚜️ MAIN CHANNEL ⚜️', url="https://t.me/joinchat/Fhcssgw5H8wwMDBl")
             ],[
             InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
             InlineKeyboardButton('🔰SERIES🔰', url='https://t.me/netflixorgi')
@@ -46,7 +46,7 @@ async def start(client, message):
             logger.error("Make sure Bot is admin in Forcesub channel")
             return
         btn = []
-        btn.append([InlineKeyboardButton("🤖 Join Updates Channel", url="https://t.me/joinchat/Fhcssgw5H8wwMDBl")])
+        btn.append([InlineKeyboardButton("🤖 Join Updates Channel", url=invite_link.invite_link)])
         if message.command[1] != "subscribe":
             btn.append([InlineKeyboardButton(" 🔄 Try Again", callback_data=f"checksub#{message.command[1]}")])
         await client.send_message(
