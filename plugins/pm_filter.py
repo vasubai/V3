@@ -363,10 +363,10 @@ async def cb_handler(client: Client, query: CallbackQuery):
         await query.answer()
     elif query.data == "start":
         buttons = [[
-            InlineKeyboardButton('➕ Add Me To Your Groups ➕', url='http://t.me/EvaMariaBot?startgroup=true')
+            InlineKeyboardButton('⚜️ MAIN CHANNEL ⚜️', url='https://t.me/joinchat/Fhcssgw5H8wwMDBl')
             ],[
             InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🤖 Deploy Now', url='https://youtu.be/fyFKnde_Jz8')
+            InlineKeyboardButton('🔰SERIES🔰', url='https://t.me/netflixorgi')
             ],[
             InlineKeyboardButton('ℹ️ Help', callback_data='help'),
             InlineKeyboardButton('😊 About', callback_data='about')
@@ -396,7 +396,7 @@ async def cb_handler(client: Client, query: CallbackQuery):
         )
     elif query.data == "about":
         buttons= [[
-            InlineKeyboardButton('🤖 Deploy Now', url='https://youtu.be/fyFKnde_Jz8'),
+            InlineKeyboardButton('2nd GROUP', url='https://t.me/malayalam_cinmaa'),
             InlineKeyboardButton('♥️ Source', callback_data='source')
             ],[
             InlineKeyboardButton('🏠 Home', callback_data='start'),
