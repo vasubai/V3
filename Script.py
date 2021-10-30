@@ -13,7 +13,6 @@ class script(object):
     SOURCE_TXT = """<b>NOTE:</b>
 - Zakir Bhai is a not an open source project. 
   
-
 <b>DEVS:</b>
 - <a href=https://t.me/malayayalies>MALAYALAM CINEMA</a>"""
     MANUELFILTER_TXT = """Help: <b>Filters</b>
