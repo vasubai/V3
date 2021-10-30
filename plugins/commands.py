@@ -21,10 +21,10 @@ async def start(client, message):
     EVAMARIABOT = await client.get_me()
     if len(message.command) != 2:
         buttons = [[
-            InlineKeyboardButton('➕ Add Me To Your Groups ➕', url=f'http://t.me/{EVAMARIABOT.username}?startgroup=true')
+            InlineKeyboardButton('⚜️ MAIN CHANNEL ⚜️', url="https://t.me/joinchat/Fhcssgw5H8wwMDBl")
             ],[
             InlineKeyboardButton('🔍 Search', switch_inline_query_current_chat=''),
-            InlineKeyboardButton('🔰CHANNEL🔰', url='https://t.me/joinchat/Fhcssgw5H8wwMDBl')
+            InlineKeyboardButton('🔰SERIES🔰', url='https://t.me/netflixorgi')
             ],[
             InlineKeyboardButton('ℹ️ Help', callback_data='help'),
             InlineKeyboardButton('😊 About', callback_data='about')
