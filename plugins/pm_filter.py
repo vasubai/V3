@@ -552,6 +552,11 @@ async def auto_filter(client, message):
             await message.reply_photo(photo=imdb.get('poster'), caption=f"<b>Query: {search}</b> \n‌‌‌‌IMDb Data:\n\n🏷 Title: <a href={imdb['url']}>{imdb.get('title')}</a>\n🎭 Genres: {imdb.get('genres')}\n📆 Year: <a href={imdb['url']}/releaseinfo>{imdb.get('year')}</a>\n🌟 Rating: <a href={imdb['url']}/ratings>{imdb.get('rating')}</a> / 10", reply_markup=InlineKeyboardMarkup(btn))
         elif imdb:
             await message.reply_text(f"<b>Query: {search}</b> \n‌‌‌‌IMDb Data:\n\n🏷 Title: <a href={imdb['url']}>{imdb.get('title')}</a>\n🎭 Genres: {imdb.get('genres')}\n📆 Year: <a href={imdb['url']}/releaseinfo>{imdb.get('year')}</a>\n🌟 Rating: <a href={imdb['url']}/ratings>{imdb.get('rating')}</a> / 10", reply_markup=InlineKeyboardMarkup(btn))
-        else:
+        elif imbd:
             await message.reply_text(f"<b>Here is What I Found In My Database For Your Query {search} ‌‌‌‌‎ </b>", reply_markup=InlineKeyboardMarkup(btn))
+            else: 
+               pass # return if no files found for that query if len(results) == 0 : # double check 
+            buttons = [[ InlineKeyboardButton("🔍 Search Spelling 🔎",url=f"https://www.google.com/search?q={query}") ]] 
+            reply_markup = InlineKeyboardMarkup(buttons) 
+            await bot.send_message( chat_id=update.chat.id, text=f"Sorry I couldn't find anything for {the_query} 🤧\nTry search spelling by clicking below</b> 👇🏽", reply_markup=reply_markup, parse_mode="md", reply_to_message_id=update.message_id) return
     
