@@ -558,7 +558,6 @@ async def auto_filter(client, message):
             pass # return if no files found for that query
     
 
-    if len(results) == 0 : # double check
         buttons = [[
                  InlineKeyboardButton("🔍 Search Spelling 🔎",url=f"https://www.google.com/search?q={query}+movie")
                  ]]
