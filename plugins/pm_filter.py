@@ -571,10 +571,3 @@ async def auto_filter(client, message):
         )
         await asyncio.sleep(10)
         await Send_message.delete()
-    
-
-  
-
-    
-
-        
