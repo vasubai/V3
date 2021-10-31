@@ -576,5 +576,5 @@ async def auto_filter(client, message):
     if len(results) == 0: # double check
         return
     
-    else:
+
         
