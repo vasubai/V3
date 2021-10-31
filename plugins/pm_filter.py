@@ -565,5 +565,5 @@ async def auto_filter(client, message):
         await message.reply_text(f"Sorry I couldn't find anything for {the_query}🤧\n\nതാഴെ ഉള്ള ബട്ടണിൽ ക്ലിക്ക് ചെയ്ത് ഗൂഗിളിൽ പോയി Correct Spelling കണ്ടുപിടിച്ച ശേഷം അത് കോപ്പി ചെയ്ത് ഇവിടെ Paste ചെയ്യുക.</b> 👇🏽",
         reply_markup=reply_markup,
         parse_mode="md",
-        return
-         
+      
+      
