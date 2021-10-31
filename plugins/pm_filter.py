@@ -555,7 +555,7 @@ async def auto_filter(client, message):
         else:
             await message.reply_text(f"<b>Here is What I Found In My Database For Your Query {search} ‌‌‌‌‎ </b>", reply_markup=InlineKeyboardMarkup(btn))
         else:
-        pass # return if no files found for that query
+            pass # return if no files found for that query
     
 
     if len(results) == 0 : # double check
