@@ -563,7 +563,7 @@ async def auto_filter(client, message):
                 [
                     InlineKeyboardButton(
                         "Search In Google", url=f"https://google.com/search?q={query}" # URL
-                    )
+                    ]
                 ]
             ]
         ),
