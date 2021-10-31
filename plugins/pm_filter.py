@@ -559,7 +559,7 @@ async def auto_filter(client, message):
     
 
         buttons = [[
-                 InlineKeyboardButton("🔍 Search Spelling 🔎",url=f"https://www.google.com/search?q={query}+movie")
+                 InlineKeyboardButton("🔍 Search Spelling 🔎",url=f"https://www.google.com/search?q={search}+movie")
                  ]]
         reply_markup = InlineKeyboardMarkup(buttons)
         await bot.send_message(
