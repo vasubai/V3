@@ -557,9 +557,16 @@ async def auto_filter(client, message):
         else:
             pass # return if no files found for that query
     
+        
 
+       if len(message.text) == 0 : # double check
         buttons = [[
                  InlineKeyboardButton("🔍 Search Spelling 🔎",url=f"https://www.google.com/search?q={search}+movie")
                  ]]
         reply_markup = InlineKeyboardMarkup(buttons)
-        await message.reply_text(f"Sorry I couldn't find anything for {search}🤧\n\nതാഴെ ഉള്ള ബട്ടണിൽ ക്ലിക്ക് ചെയ്ത് ഗൂഗിളിൽ പോയി Correct Spelling കണ്ടുപിടിച്ച ശേഷം അത് കോപ്പി ചെയ്ത് ഇവിടെ Paste ചെയ്യുക.</b> 👇🏽", reply_markup=reply_markup)
+        await message.reply_text(f"Sorry I couldn't find anything for {search}🤧\n\nതാഴെ ഉള്ള ബട്ടണിൽ ക്ലിക്ക് ചെയ്ത് ഗൂഗിളിൽ പോയി Correct Spelling കണ്ടുപിടിച്ച ശേഷം അത് കോപ്പി ചെയ്ത് ഇവിടെ Paste ചെയ്യുക.</b> 👇🏽", reply_markup=reply_markup,
+        parse_mode="md",
+
+        reply_to_message_id=update.message_id)
+
+        return
